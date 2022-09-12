@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const apiUrl = 'http://localhost:8000/api/';
 
-export const singleFileUpload = async (data, options) => {
+export const singleFileUpload = async (data) => {
     try {
-        await axios.post(apiUrl + 'singleFile', data, options)
+        await axios.post(apiUrl + 'singleFile', data)
     } catch (error) {
         throw error
     }
